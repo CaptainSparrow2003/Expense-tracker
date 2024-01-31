@@ -1,16 +1,36 @@
-# newproject
 
-A new Flutter project.
+# Expense Tracker Using Flutter with SMS Parsing
+## Overview
+This repository showcases the development of an autonomous expense tracker using Flutter. The app automates the process of tracking expenses by extracting financial data from SMS messages. The primary objectives include:
 
-## Getting Started
+Reading and sorting messages related to expenses.
+Extracting transaction data such as amount and date from sorted messages.
+Categorizing transactions based on the mode of payment.
+Visualizing the obtained data through graphs and charts for user-friendly analysis.
+Implementation Methodology
+App Workflow
 
-This project is a starting point for a Flutter application.
+Note: The current implementation relies on regular expressions, making it user-specific. A more robust approach involves using machine learning for parsing and categorizing financial SMS messages. This repository serves as a conceptual demonstration.
 
-A few resources to get you started if this is your first Flutter project:
+## Implementation Steps
+SMS Collection: Utilizing the Telephony package to gather all SMS messages received by the user.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Expense Message Separation: Identifying and segregating expense-related messages through regular expressions.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Parsing Information: Extracting essential details like date and amount spent from SMS messages using Flutter functionalities.
+
+User Modification: Implementing features that allow users to modify and categorize their expenses manually.
+
+User Interface Rendering: Creating a user interface using Flutter to present processed information, including graphs and charts.
+
+## Result
+The application successfully creates a highly accurate expense tracker by parsing SMS data with the help of Flutter libraries (e.g., Telephony) and regular expressions. The core functionality of the app has been demonstrated, providing users with an efficient tool for expense management.
+
+## Future Enhancements
+Machine Learning Integration: Implement machine learning methods for parsing and categorizing SMS messages, making the app adaptable to different users.
+
+Cloud Sync: Enable synchronization with cloud services to ensure data backup and access from multiple devices.
+
+Expense Insights: Incorporate additional features such as expense trends, budget tracking, and personalized insights.
+
+Security Measures: Implement secure methods for handling financial data and ensure user privacy.
